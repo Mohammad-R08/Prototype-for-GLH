@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="/static/site.css" />
+</head>
+<body class="basebody">
+
+    <nav class="navbar">
+
+        <img src="/static/assets/GLH_Logo.png" height="100"/>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+        <div class="dropdown">
+            <button class="dropdownbtn">Dashboards</button>
+            <div class="dropdowncontent">
+                <a href="/userdashboard">User Dashboard</a>
+                <a href="/producerdashboard">Producer Dashboard</a>
+            </div>
+        </div>
+        <a href="/cart">Cart</a>
+    </nav>
+    <br />
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

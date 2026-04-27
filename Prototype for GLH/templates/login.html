@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="post">
+    <input type="email" name="email" placeholder="Email" />
+    <input type="password" name="password" placeholder="Password" />
+    <label>
+        <input type="checkbox" name="remember" /> Remember me
+    </label>
+    <br />
+    <input type="submit" value="Login" />
+</form>
+
+<!--{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}-->
+
+
+{% endblock %}

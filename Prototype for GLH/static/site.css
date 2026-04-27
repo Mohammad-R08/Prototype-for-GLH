@@ -1,0 +1,140 @@
+.basebody {
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS';
+}
+
+.navbar {
+    background-color:darkgreen;
+    display: flex;
+
+}
+
+.navbar a {
+    color:white;
+    text-decoration:none;
+    text-align: center;
+    vertical-align: central;
+    font-size: 20px;
+    padding: 15px
+}
+
+.navbar a:hover {
+    background-color:green;
+    color:white;
+    text-decoration: underline;
+}
+
+
+.heroimage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/Hero_Image.jpg); 
+    aspect-ratio: auto;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+/* hero image referenced from w3schools */
+
+.herotext {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+/* positioning of text / link referenced from w3schools */
+
+.herolink {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    background-color: darkgreen;
+    border-radius: 35px;
+    overflow: hidden;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown {
+    font-size: 20px;
+    float: left;
+    overflow: hidden;
+}
+
+.dropdownbtn {
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: inherit;
+    padding: 15px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown:hover .dropdownbtn {
+    background-color: green;
+    color: white;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: darkgreen;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdowncontent a {
+    float: none;
+    color: inherit;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown:hover .dropdowncontent {
+    display: flex;
+    flex-direction: column;
+}
+
+/* dropdown referenced from w3schools */
+
+.homecontainer {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.homelinkscontainer {
+
+    display: flex;
+    flex-direction: column;
+}
