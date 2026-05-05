@@ -86,7 +86,7 @@ def register():
         cur.close()
         conn.close()
 
-        return redirect(url_for('login'))
+        return redirect(url_for('home'))
 
     return render_template('register.html')
 
