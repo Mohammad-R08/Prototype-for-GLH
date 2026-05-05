@@ -104,7 +104,7 @@ def login():
         if email == user_obj.email and bcrypt.check_password_hash(user_obj.password, password):
             login_user(user_obj, remember = request.form.get('remember'))
 
-        return redirect(url_for('user_dashboard'))
+        return redirect(url_for('userdashboard'))
 
     else:
         return render_template('login.html')
