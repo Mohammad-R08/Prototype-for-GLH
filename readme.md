@@ -20,4 +20,7 @@ follow the installers instructions and once the installers instructions are comp
 If you do not have sqlite3, flask and flask_login already installed the same method will work to install them as well.
 
 Once you have the website loaded you can look around the home page, navigate the site using the navbar, register an account and login. When you try to login the site will crash due to a bug I already know about. You can mention that bug on the feedback form.
-Once you have done those four tasks you can answer the feedback form.
+
+If you are a technical user (Technical meaning do you understand code, specifically python in the context of flask, html, css and javascript?) you should also look at the files in the project and try to look through and understand the code.
+
+Once you have done all of the above, you can answer the feedback form.
